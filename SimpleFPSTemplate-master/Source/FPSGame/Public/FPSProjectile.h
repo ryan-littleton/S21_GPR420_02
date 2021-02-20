@@ -9,6 +9,7 @@
 
 class UProjectileMovementComponent;
 class USphereComponent;
+class AFPSBombActor;
 
 
 UCLASS()
@@ -21,6 +22,9 @@ protected:
 	/** Sphere collision component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category= "Projectile")
 	USphereComponent* CollisionComp;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Bombs")
+	TSubclassOf<AFPSBombActor> BombClass;
 
 	/** Projectile movement component */
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Movement")
