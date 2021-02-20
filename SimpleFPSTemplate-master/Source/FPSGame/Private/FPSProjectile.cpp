@@ -50,6 +50,11 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 			OtherComp->SetWorldScale3D(Scale);
 		}
 
+		UMaterialInstanceDynamic* MatInst = OtherComp->CreateAndSetMaterialInstanceDynamic(0);
+		if (MatInst)
+		{
+			MatInst->SetVectorParameterValue("Color", FLinearColor::MakeRandomColor());
+		}
 
 		Destroy();
 	}
