@@ -43,34 +43,34 @@ void AFPSProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPr
 		OtherComp->AddImpulseAtLocation(GetVelocity() * 100.0f, GetActorLocation());
 
 		FVector Scale = OtherComp->GetComponentScale();
-		Scale *= 0.25f; //1/4 size
-		/*if (Scale.GetMin() < 0.5f)
+		if (Scale.GetMin() < 1.0f)
 		{
 			AFPSBombActor* MyBomb = GetWorld()->SpawnActor<AFPSBombActor>(BombClass, OtherActor->GetActorLocation(), OtherActor->GetActorRotation());
 			OtherActor->Destroy();
 		}
 		else
 		{
-			OtherComp->SetWorldScale3D(Scale);
-		}*/
+			Scale *= 0.25f;
+			//destroy cube and spawn 4 more 1/4 size cubes
+			FVector Location = OtherActor->GetActorLocation();
+			FRotator Rotation = OtherActor->GetActorRotation();
 
-		//destroy cube and spawn 4 more 1/4 size cubes
-		FVector Location = OtherActor->GetActorLocation();
-		FRotator Rotation = OtherActor->GetActorRotation();
-		
-		//FActorSpawnParameters SpawnInfo;
-		OtherActor->Destroy();
+			//FActorSpawnParameters SpawnInfo;
+			OtherActor->Destroy();
 
-		int totalCubes = 4;
+			int totalCubes = 4;
 
-		for (int i = 0; i < totalCubes; i++)
-		{
-			//ACubeActor* NewCube = GetWorld()->SpawnActor<ACubeActor>(Location, Rotation, SpawnInfo);
-			ACubeActor* NewCube = GetWorld()->SpawnActor<ACubeActor>(CubeClass, Location, Rotation);
-			NewCube->SetActorScale3D(Scale);
+			for (int i = 0; i < totalCubes; i++)
+			{
+				//ACubeActor* NewCube = GetWorld()->SpawnActor<ACubeActor>(Location, Rotation, SpawnInfo);
+				ACubeActor* NewCube = GetWorld()->SpawnActor<ACubeActor>(CubeClass, Location, Rotation);
+				NewCube->SetActorScale3D(Scale);
 
-			Location.Z += 100;
+				Location.Z += 25 * (Scale.Z * 4);
+			}
 		}
+
+
 
 
 		/*UMaterialInstanceDynamic* MatInst = OtherComp->CreateAndSetMaterialInstanceDynamic(0);
