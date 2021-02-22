@@ -35,9 +35,16 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Cubes")
 	TSubclassOf<ACubeActor> CubeClass;
 
+	//same as explosion from bomb
+	UPROPERTY(EditDefaultsOnly, Category = "Explosion")
+	UParticleSystem* ExplosionTemplate;
+
+
 public:
 
 	AFPSProjectile();
+
+	//void SpecialAttack();
 
 	/** called when projectile hits something */
 	UFUNCTION()

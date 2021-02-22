@@ -5,6 +5,7 @@
 #include "Components/SphereComponent.h"
 #include "FPSBombActor.h"
 #include "CubeActor.h"
+#include "Kismet/GameplayStatics.h"
 
 AFPSProjectile::AFPSProjectile() 
 {

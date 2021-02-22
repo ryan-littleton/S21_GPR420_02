@@ -13,6 +13,7 @@ class AFPSProjectile;
 class USoundBase;
 class UAnimSequence;
 class AFPSBombActor;
+class AFPSSpecialProjectile;
 
 
 UCLASS()
@@ -52,10 +53,20 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Gameplay")
 	UAnimSequence* FireAnimation;
 
+	UPROPERTY(EditDefaultsOnly, Category = "SpecialProjectile")
+	TSubclassOf<AFPSSpecialProjectile> SpecialProjectileClass;
+
 protected:
 	
 	/** Fires a projectile. */
 	void Fire();
+
+	//fires special attack
+	void SpecialAttack();
+
+	UFUNCTION()
+	void SetCooldown();
+	bool IsCooldown;
 
 	// Spawns a bomb actor
 	void SpawnBomb();
