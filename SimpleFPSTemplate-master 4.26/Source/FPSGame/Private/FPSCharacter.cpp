@@ -89,7 +89,35 @@ void AFPSCharacter::Fire()
 	}
 }
 
+/*
+void AFPSCharacter::BeginSpecialAttack()
+{
+	FTimerHandle Timer;
+	FTimerDelegate TimerDel;
+	float Scale = FMath::RandRange(1.0f, 5.0f);
+	TimerDel.BindUFunction(this, FName("SpecialAttack"), Scale);
+	UWorld* const World = GetWorld();
+	if (World != nullptr)
+	{
+		World->GetTimerManager().SetTimer(Timer, TimerDel, 3.0f, false);
+	}
+}
+*/
+
 void AFPSCharacter::SpecialAttack()
+{
+	FTimerHandle Timer;
+	FTimerDelegate TimerDel;
+	float Scale = FMath::RandRange(1.0f, 5.0f);
+	TimerDel.BindUFunction(this, FName("RunSpecialAttack"), Scale);
+	UWorld* const World = GetWorld();
+	if (World != nullptr)
+	{
+		World->GetTimerManager().SetTimer(Timer, TimerDel, 3.0f, false);
+	}
+}
+
+void AFPSCharacter::RunSpecialAttack(float _Scale)
 {
 	//similar to regular fire
 

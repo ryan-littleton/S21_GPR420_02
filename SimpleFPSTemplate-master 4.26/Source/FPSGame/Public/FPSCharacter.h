@@ -62,7 +62,11 @@ protected:
 	void Fire();
 
 	//fires special attack
+	UFUNCTION()
 	void SpecialAttack();
+	UFUNCTION()
+	void RunSpecialAttack(float _Scale);
+
 
 	UFUNCTION()
 	void SetCooldown();

@@ -14,7 +14,7 @@ AFPSSpecialProjectile::AFPSSpecialProjectile()
     //create a projectile similar to regular attack
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
 	CollisionComp->InitSphereRadius(100.0f);
-	CollisionComp->SetCollisionProfileName("Projectile"); //is this whats wrong?
+	CollisionComp->SetCollisionProfileName("Projectile");
 	CollisionComp->OnComponentHit.AddDynamic(this, &AFPSSpecialProjectile::OnHit);	// set up a notification for when this component hits something blocking
 
 	CollisionComp->SetWalkableSlopeOverride(FWalkableSlopeOverride(WalkableSlope_Unwalkable, 0.f));
@@ -44,7 +44,7 @@ void AFPSSpecialProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAct
 		QueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
 
 		FCollisionShape CollShape;
-		CollShape.SetSphere(500.0f);
+		CollShape.SetSphere(500.0f); //This should be changed with scale
 
 		TArray<FOverlapResult> OutOverlaps;
 		GetWorld()->OverlapMultiByObjectType(OutOverlaps, GetActorLocation(), FQuat::Identity, QueryParams, CollShape);
