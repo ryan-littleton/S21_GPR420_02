@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "Delegates/Delegate.h"
 #include "FPSCharacter.generated.h"
 
 class UInputComponent;
@@ -15,6 +16,8 @@ class UAnimSequence;
 class AFPSBombActor;
 class AFPSSpecialProjectile;
 
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FMultiCast);
 
 UCLASS()
 class AFPSCharacter : public ACharacter
@@ -56,6 +59,9 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "SpecialProjectile")
 	TSubclassOf<AFPSSpecialProjectile> SpecialProjectileClass;
 
+	UPROPERTY(BlueprintAssignable, Category = "Multicast")
+	FMultiCast MulticastEvent;
+
 protected:
 	
 	/** Fires a projectile. */
@@ -66,6 +72,12 @@ protected:
 	void SpecialAttack();
 	//UFUNCTION()
 	//void RunSpecialAttack(float _Scale);
+
+	//used for the multicast delegate function, currently changes to a random color
+	UFUNCTION()
+		void BeginMulticast();
+	UFUNCTION()
+		void ActivateMulticast();
 
 
 	UFUNCTION()

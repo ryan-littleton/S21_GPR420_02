@@ -32,6 +32,9 @@ AFPSCharacter::AFPSCharacter()
 	GunMeshComponent->SetupAttachment(Mesh1PComponent, "GripPoint");
 
 	IsCooldown = false;
+
+	MulticastEvent.AddDynamic(this, &AFPSCharacter::ActivateMulticast);
+	MulticastEvent.AddDynamic(this, &ACharacter::Jump);
 }
 
 
@@ -44,6 +47,7 @@ void AFPSCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompon
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &AFPSCharacter::Fire);
 	PlayerInputComponent->BindAction("SpawnBomb", IE_Pressed, this, &AFPSCharacter::SpawnBomb);
 	PlayerInputComponent->BindAction("SpecialAttack", IE_Pressed, this, &AFPSCharacter::SpecialAttack);
+	PlayerInputComponent->BindAction("MulticastDelegate", IE_Pressed, this, &AFPSCharacter::BeginMulticast);
 
 	PlayerInputComponent->BindAxis("MoveForward", this, &AFPSCharacter::MoveForward);
 	PlayerInputComponent->BindAxis("MoveRight", this, &AFPSCharacter::MoveRight);
@@ -89,21 +93,6 @@ void AFPSCharacter::Fire()
 	}
 }
 
-/*
-void AFPSCharacter::BeginSpecialAttack()
-{
-	FTimerHandle Timer;
-	FTimerDelegate TimerDel;
-	float Scale = FMath::RandRange(1.0f, 5.0f);
-	TimerDel.BindUFunction(this, FName("SpecialAttack"), Scale);
-	UWorld* const World = GetWorld();
-	if (World != nullptr)
-	{
-		World->GetTimerManager().SetTimer(Timer, TimerDel, 3.0f, false);
-	}
-}
-*/
-
 void AFPSCharacter::SpecialAttack()
 {
 	//similar to regular fire
@@ -116,7 +105,7 @@ void AFPSCharacter::SpecialAttack()
 		{
 			AttackScale = 2.0f;
 			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("ThirdLvLCharge"));
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::SanitizeFloat(GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift"))));
+
 			// try and fire a projectile
 			if (SpecialProjectileClass)
 			{
@@ -272,5 +261,48 @@ void AFPSCharacter::MoveRight(float Value)
 	{
 		// add movement in that direction
 		AddMovementInput(GetActorRightVector(), Value);
+	}
+}
+
+
+void AFPSCharacter::BeginMulticast()
+{
+	MulticastEvent.Broadcast();
+}
+
+void AFPSCharacter::ActivateMulticast()
+{
+
+	float R = FMath::RandRange(0.0f, 1.0f);
+	float G = FMath::RandRange(0.0f, 1.0f);
+	float B = FMath::RandRange(0.0f, 1.0f);
+	float A = FMath::RandRange(0.0f, 1.0f);
+	FLinearColor RandColor;
+	RandColor.R = R;
+	RandColor.G = G;
+	RandColor.B = B;
+	RandColor.A = A;
+
+	FCollisionObjectQueryParams QueryParams;
+	QueryParams.AddObjectTypesToQuery(ECC_WorldDynamic);
+	QueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
+
+	FCollisionShape CollShape;
+	CollShape.SetSphere(3000.0f);
+
+	TArray<FOverlapResult> OutOverlaps;
+	GetWorld()->OverlapMultiByObjectType(OutOverlaps, GetActorLocation(), FQuat::Identity, QueryParams, CollShape);
+
+	for (FOverlapResult Result : OutOverlaps)
+	{
+		UPrimitiveComponent* Overlap = Result.GetComponent();
+		if (Overlap && Overlap->IsSimulatingPhysics())
+		{
+			UMaterialInstanceDynamic* MatInst = Overlap->CreateAndSetMaterialInstanceDynamic(0);
+			if (MatInst)
+			{
+				MatInst->SetVectorParameterValue("Color", RandColor);
+			}
+		}
 	}
 }
