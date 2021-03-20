@@ -288,7 +288,7 @@ void AFPSCharacter::ActivateMulticast()
 	QueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
 
 	FCollisionShape CollShape;
-	CollShape.SetSphere(3000.0f);
+	CollShape.SetSphere(5000.0f);
 
 	TArray<FOverlapResult> OutOverlaps;
 	GetWorld()->OverlapMultiByObjectType(OutOverlaps, GetActorLocation(), FQuat::Identity, QueryParams, CollShape);
