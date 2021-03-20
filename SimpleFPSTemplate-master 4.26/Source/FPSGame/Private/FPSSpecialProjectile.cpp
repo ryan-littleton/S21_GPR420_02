@@ -32,6 +32,11 @@ AFPSSpecialProjectile::AFPSSpecialProjectile()
 	InitialLifeSpan = 6.0f;
 }
 
+void AFPSSpecialProjectile::SetAttackScale(float _Scale)
+{
+	AttackScale = _Scale;
+}
+
 
 void AFPSSpecialProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
@@ -44,7 +49,10 @@ void AFPSSpecialProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherAct
 		QueryParams.AddObjectTypesToQuery(ECC_PhysicsBody);
 
 		FCollisionShape CollShape;
-		CollShape.SetSphere(500.0f); //This should be changed with scale
+		float currentScale = 500.0f * AttackScale;
+		FString ScaleText = FString::SanitizeFloat(currentScale);
+		CollShape.SetSphere(currentScale); //This should be changed with scale
+		GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, ScaleText);
 
 		TArray<FOverlapResult> OutOverlaps;
 		GetWorld()->OverlapMultiByObjectType(OutOverlaps, GetActorLocation(), FQuat::Identity, QueryParams, CollShape);

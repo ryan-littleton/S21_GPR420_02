@@ -33,12 +33,14 @@ protected:
 	UPROPERTY(EditDefaultsOnly, Category = "Explosion")
 		UParticleSystem* ExplosionTemplate;
 
+	float AttackScale = 0.0f;
+
 
 public:
 
 	AFPSSpecialProjectile();
 
-	//void SpecialAttack();
+	void SetAttackScale(float _Scale);
 
 	/** called when projectile hits something */
 	UFUNCTION()

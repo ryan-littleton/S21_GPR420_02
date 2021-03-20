@@ -106,59 +106,142 @@ void AFPSCharacter::BeginSpecialAttack()
 
 void AFPSCharacter::SpecialAttack()
 {
-	FTimerHandle Timer;
-	FTimerDelegate TimerDel;
-	float Scale = FMath::RandRange(1.0f, 5.0f);
-	TimerDel.BindUFunction(this, FName("RunSpecialAttack"), Scale);
-	UWorld* const World = GetWorld();
-	if (World != nullptr)
-	{
-		World->GetTimerManager().SetTimer(Timer, TimerDel, 3.0f, false);
-	}
-}
-
-void AFPSCharacter::RunSpecialAttack(float _Scale)
-{
 	//similar to regular fire
+	float AttackScale = 0.0f;
+	
 
 	if (IsCooldown == false)
 	{
-		// try and fire a projectile
-		if (SpecialProjectileClass)
+		if (GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift")) >= 2.0f)
 		{
-			// Grabs location from the mesh that must have a socket called "Muzzle" in his skeleton
-			FVector MuzzleLocation = GunMeshComponent->GetSocketLocation("Muzzle");
-			// Use controller rotation which is our view direction in first person
-			FRotator MuzzleRotation = GetControlRotation();
-
-			//Set Spawn Collision Handling Override
-			FActorSpawnParameters ActorSpawnParams;
-			ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
-
-			// spawn the projectile at the muzzle
-			GetWorld()->SpawnActor<AFPSSpecialProjectile>(SpecialProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
-		}
-
-		// try and play the sound if specified
-		if (FireSound)
-		{
-			UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
-		}
-
-		// try and play a firing animation if specified
-		if (FireAnimation)
-		{
-			// Get the animation object for the arms mesh
-			UAnimInstance* AnimInstance = Mesh1PComponent->GetAnimInstance();
-			if (AnimInstance)
+			AttackScale = 2.0f;
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("ThirdLvLCharge"));
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::SanitizeFloat(GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift"))));
+			// try and fire a projectile
+			if (SpecialProjectileClass)
 			{
-				AnimInstance->PlaySlotAnimationAsDynamicMontage(FireAnimation, "Arms", 0.0f);
-			}
-		}
+				// Grabs location from the mesh that must have a socket called "Muzzle" in his skeleton
+				FVector MuzzleLocation = GunMeshComponent->GetSocketLocation("Muzzle");
+				// Use controller rotation which is our view direction in first person
+				FRotator MuzzleRotation = GetControlRotation();
 
-		IsCooldown = true;
-		FTimerHandle CooldownTimer;
-		GetWorldTimerManager().SetTimer(CooldownTimer, this, &AFPSCharacter::SetCooldown, 3.0f);
+				//Set Spawn Collision Handling Override
+				FActorSpawnParameters ActorSpawnParams;
+				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+				// spawn the projectile at the muzzle
+				AFPSSpecialProjectile* NewActor = GetWorld()->SpawnActor<AFPSSpecialProjectile>(SpecialProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
+				NewActor->SetAttackScale(AttackScale);
+			}
+
+			// try and play the sound if specified
+			if (FireSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+			}
+
+			// try and play a firing animation if specified
+			if (FireAnimation)
+			{
+				// Get the animation object for the arms mesh
+				UAnimInstance* AnimInstance = Mesh1PComponent->GetAnimInstance();
+				if (AnimInstance)
+				{
+					AnimInstance->PlaySlotAnimationAsDynamicMontage(FireAnimation, "Arms", 0.0f);
+				}
+			}
+
+			IsCooldown = true;
+			FTimerHandle CooldownTimer;
+			GetWorldTimerManager().SetTimer(CooldownTimer, this, &AFPSCharacter::SetCooldown, 3.0f);
+		}
+		else if (GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift")) >= 1.0f && GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift")) < 2.0f)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("SecondLvLCharge"));
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::SanitizeFloat(GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift"))));
+			AttackScale = 1.0f;
+			// try and fire a projectile
+			if (SpecialProjectileClass)
+			{
+				// Grabs location from the mesh that must have a socket called "Muzzle" in his skeleton
+				FVector MuzzleLocation = GunMeshComponent->GetSocketLocation("Muzzle");
+				// Use controller rotation which is our view direction in first person
+				FRotator MuzzleRotation = GetControlRotation();
+
+				//Set Spawn Collision Handling Override
+				FActorSpawnParameters ActorSpawnParams;
+				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+				// spawn the projectile at the muzzle
+				AFPSSpecialProjectile* NewActor = GetWorld()->SpawnActor<AFPSSpecialProjectile>(SpecialProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
+				NewActor->SetAttackScale(AttackScale);
+			}
+
+			// try and play the sound if specified
+			if (FireSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+			}
+
+			// try and play a firing animation if specified
+			if (FireAnimation)
+			{
+				// Get the animation object for the arms mesh
+				UAnimInstance* AnimInstance = Mesh1PComponent->GetAnimInstance();
+				if (AnimInstance)
+				{
+					AnimInstance->PlaySlotAnimationAsDynamicMontage(FireAnimation, "Arms", 0.0f);
+				}
+			}
+
+			IsCooldown = true;
+			FTimerHandle CooldownTimer;
+			GetWorldTimerManager().SetTimer(CooldownTimer, this, &AFPSCharacter::SetCooldown, 3.0f);
+		}
+		else if (GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift")) >= 0.0f && GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift")) < 1.0f)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, TEXT("FirstLvLCharge"));
+			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Red, FString::SanitizeFloat(GetWorld()->GetFirstPlayerController()->GetInputKeyTimeDown(FKey("Shift"))));
+			AttackScale = 0.5f;
+			// try and fire a projectile
+			if (SpecialProjectileClass)
+			{
+				// Grabs location from the mesh that must have a socket called "Muzzle" in his skeleton
+				FVector MuzzleLocation = GunMeshComponent->GetSocketLocation("Muzzle");
+				// Use controller rotation which is our view direction in first person
+				FRotator MuzzleRotation = GetControlRotation();
+
+				//Set Spawn Collision Handling Override
+				FActorSpawnParameters ActorSpawnParams;
+				ActorSpawnParams.SpawnCollisionHandlingOverride = ESpawnActorCollisionHandlingMethod::AdjustIfPossibleButDontSpawnIfColliding;
+
+				// spawn the projectile at the muzzle
+				AFPSSpecialProjectile* NewActor = GetWorld()->SpawnActor<AFPSSpecialProjectile>(SpecialProjectileClass, MuzzleLocation, MuzzleRotation, ActorSpawnParams);
+				NewActor->SetAttackScale(AttackScale);
+			}
+
+			// try and play the sound if specified
+			if (FireSound)
+			{
+				UGameplayStatics::PlaySoundAtLocation(this, FireSound, GetActorLocation());
+			}
+
+			// try and play a firing animation if specified
+			if (FireAnimation)
+			{
+				// Get the animation object for the arms mesh
+				UAnimInstance* AnimInstance = Mesh1PComponent->GetAnimInstance();
+				if (AnimInstance)
+				{
+					AnimInstance->PlaySlotAnimationAsDynamicMontage(FireAnimation, "Arms", 0.0f);
+				}
+			}
+
+			IsCooldown = true;
+			FTimerHandle CooldownTimer;
+			GetWorldTimerManager().SetTimer(CooldownTimer, this, &AFPSCharacter::SetCooldown, 3.0f);
+		}
+		
 	}
 }
 
