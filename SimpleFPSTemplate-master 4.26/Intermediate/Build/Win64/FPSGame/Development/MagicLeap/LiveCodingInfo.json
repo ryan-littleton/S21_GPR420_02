@@ -1,0 +1,37 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeap.cpp.obj": [
+			"AppEventHandler.cpp.obj",
+			"AppFramework.cpp.obj",
+			"InAppPurchaseComponent.cpp.obj",
+			"LuminApplicationLifecycleComponent.cpp.obj",
+			"MagicLeapCustomPresent.cpp.obj",
+			"MagicLeapCustomPresentGL.cpp.obj",
+			"MagicLeapCustomPresentMetal.cpp.obj",
+			"MagicLeapCustomPresentVk.cpp.obj",
+			"MagicLeapHeadTrackingNotificationsComponent.cpp.obj",
+			"MagicLeapHMD.cpp.obj",
+			"MagicLeapHMDFunctionLibrary.cpp.obj",
+			"MagicLeapMeshTrackerComponent.cpp.obj",
+			"MagicLeapStereoLayers.cpp.obj",
+			"MagicLeapUtils.cpp.obj",
+			"MagicLeapVulkanExtensions.cpp.obj",
+			"MagicLeapXRCamera.cpp.obj",
+			"RaycastComponent.cpp.obj"
+		],
+		"Module.MagicLeap.gen.cpp.obj": [
+			"InAppPurchaseComponent.gen.cpp.obj",
+			"LuminApplicationLifecycleComponent.gen.cpp.obj",
+			"MagicLeap.init.gen.cpp.obj",
+			"MagicLeapHeadTrackingNotificationsComponent.gen.cpp.obj",
+			"MagicLeapHMDFunctionLibrary.gen.cpp.obj",
+			"MagicLeapMeshTrackerComponent.gen.cpp.obj",
+			"MagicLeapSettings.gen.cpp.obj",
+			"MagicLeapTypes.gen.cpp.obj",
+			"MeshBlockSelectorInterface.gen.cpp.obj",
+			"MeshTrackerTypes.gen.cpp.obj",
+			"RaycastComponent.gen.cpp.obj"
+		]
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapLightEstimation.cpp.obj": [
+			"LightingTrackingComponent.cpp.obj",
+			"MagicLeapLightEstimationFunctionLibrary.cpp.obj",
+			"MagicLeapLightEstimationModule.cpp.obj"
+		],
+		"Module.MagicLeapLightEstimation.gen.cpp.obj": [
+			"LightingTrackingComponent.gen.cpp.obj",
+			"MagicLeapLightEstimation.init.gen.cpp.obj",
+			"MagicLeapLightEstimationFunctionLibrary.gen.cpp.obj",
+			"MagicLeapLightEstimationTypes.gen.cpp.obj"
+		]
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapController.cpp.obj": [
+			"MagicLeapController.cpp.obj",
+			"MagicLeapControllerFunctionLibrary.cpp.obj",
+			"MagicLeapControllerKeys.cpp.obj",
+			"MagicLeapControllerPlugin.cpp.obj",
+			"MagicLeapControllerTests.cpp.obj",
+			"TouchpadGesturesComponent.cpp.obj"
+		],
+		"Module.MagicLeapController.gen.cpp.obj": [
+			"MagicLeapController.init.gen.cpp.obj",
+			"MagicLeapControllerFunctionLibrary.gen.cpp.obj",
+			"MagicLeapControllerKeys.gen.cpp.obj",
+			"TouchpadGesturesComponent.gen.cpp.obj"
+		]
+	}
+}

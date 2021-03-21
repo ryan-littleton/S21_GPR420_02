@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapHandMeshing.cpp.obj": [
+			"MagicLeapHandMeshingComponent.cpp.obj",
+			"MagicLeapHandMeshingFunctionLibrary.cpp.obj",
+			"MagicLeapHandMeshingModule.cpp.obj",
+			"MagicLeapMeshTracker.cpp.obj"
+		],
+		"Module.MagicLeapHandMeshing.gen.cpp.obj": [
+			"MagicLeapHandMeshing.init.gen.cpp.obj",
+			"MagicLeapHandMeshingComponent.gen.cpp.obj",
+			"MagicLeapHandMeshingFunctionLibrary.gen.cpp.obj",
+			"MagicLeapHandMeshingTypes.gen.cpp.obj"
+		]
+	}
+}

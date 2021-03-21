@@ -1,0 +1,16 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapPlanes.cpp.obj": [
+			"MagicLeapPlanesComponent.cpp.obj",
+			"MagicLeapPlanesFunctionLibrary.cpp.obj",
+			"MagicLeapPlanesModule.cpp.obj"
+		],
+		"Module.MagicLeapPlanes.gen.cpp.obj": [
+			"MagicLeapPlanes.init.gen.cpp.obj",
+			"MagicLeapPlanesComponent.gen.cpp.obj",
+			"MagicLeapPlanesFunctionLibrary.gen.cpp.obj",
+			"MagicLeapPlanesTypes.gen.cpp.obj"
+		]
+	}
+}

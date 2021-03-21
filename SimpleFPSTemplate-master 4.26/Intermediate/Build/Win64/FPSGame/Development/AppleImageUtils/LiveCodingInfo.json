@@ -1,0 +1,14 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AppleImageUtils.cpp.obj": [
+			"AppleImageUtilsBlueprintProxy.cpp.obj",
+			"AppleImageUtilsPlugin.cpp.obj"
+		],
+		"Module.AppleImageUtils.gen.cpp.obj": [
+			"AppleImageUtils.init.gen.cpp.obj",
+			"AppleImageUtilsBlueprintProxy.gen.cpp.obj",
+			"AppleImageUtilsTypes.gen.cpp.obj"
+		]
+	}
+}

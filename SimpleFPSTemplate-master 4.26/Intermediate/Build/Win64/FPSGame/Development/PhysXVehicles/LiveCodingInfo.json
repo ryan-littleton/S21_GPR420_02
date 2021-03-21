@@ -1,0 +1,28 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.PhysXVehicles.cpp.obj": [
+			"AnimNode_WheelHandler.cpp.obj",
+			"PhysXVehicleManager.cpp.obj",
+			"PhysXVehiclesPlugin.cpp.obj",
+			"SimpleWheeledVehicleMovementComponent.cpp.obj",
+			"TireConfig.cpp.obj",
+			"VehicleAnimInstance.cpp.obj",
+			"VehicleWheel.cpp.obj",
+			"WheeledVehicle.cpp.obj",
+			"WheeledVehicleMovementComponent.cpp.obj",
+			"WheeledVehicleMovementComponent4W.cpp.obj"
+		],
+		"Module.PhysXVehicles.gen.cpp.obj": [
+			"AnimNode_WheelHandler.gen.cpp.obj",
+			"PhysXVehicles.init.gen.cpp.obj",
+			"SimpleWheeledVehicleMovementComponent.gen.cpp.obj",
+			"TireConfig.gen.cpp.obj",
+			"VehicleAnimInstance.gen.cpp.obj",
+			"VehicleWheel.gen.cpp.obj",
+			"WheeledVehicle.gen.cpp.obj",
+			"WheeledVehicleMovementComponent.gen.cpp.obj",
+			"WheeledVehicleMovementComponent4W.gen.cpp.obj"
+		]
+	}
+}

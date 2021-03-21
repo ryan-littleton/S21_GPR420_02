@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapHandTracking.cpp.obj": [
+			"LiveLinkMagicLeapHandTrackingSourceFactory.cpp.obj",
+			"MagicLeapHandTracking.cpp.obj",
+			"MagicLeapHandTrackingFunctionLibrary.cpp.obj",
+			"MagicLeapHandTrackingLiveLink.cpp.obj"
+		],
+		"Module.MagicLeapHandTracking.gen.cpp.obj": [
+			"LiveLinkMagicLeapHandTrackingSourceFactory.gen.cpp.obj",
+			"MagicLeapHandTracking.init.gen.cpp.obj",
+			"MagicLeapHandTrackingFunctionLibrary.gen.cpp.obj",
+			"MagicLeapHandTrackingTypes.gen.cpp.obj"
+		]
+	}
+}

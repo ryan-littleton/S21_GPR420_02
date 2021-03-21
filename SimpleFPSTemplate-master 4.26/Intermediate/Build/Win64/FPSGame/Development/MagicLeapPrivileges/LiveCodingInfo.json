@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapPrivileges.cpp.obj": [
+			"MagicLeapPrivilegesFunctionLibrary.cpp.obj",
+			"MagicLeapPrivilegesModule.cpp.obj",
+			"MagicLeapPrivilegeUtils.cpp.obj"
+		],
+		"Module.MagicLeapPrivileges.gen.cpp.obj": [
+			"MagicLeapPrivileges.init.gen.cpp.obj",
+			"MagicLeapPrivilegesFunctionLibrary.gen.cpp.obj",
+			"MagicLeapPrivilegeTypes.gen.cpp.obj"
+		]
+	}
+}

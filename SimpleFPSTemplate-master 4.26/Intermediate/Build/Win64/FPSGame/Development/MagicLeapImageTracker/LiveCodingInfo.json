@@ -1,0 +1,18 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapImageTracker.cpp.obj": [
+			"MagicLeapImageTrackerComponent.cpp.obj",
+			"MagicLeapImageTrackerFunctionLibrary.cpp.obj",
+			"MagicLeapImageTrackerModule.cpp.obj",
+			"MagicLeapImageTrackerRunnable.cpp.obj",
+			"MagicLeapImageTrackerTypes.cpp.obj"
+		],
+		"Module.MagicLeapImageTracker.gen.cpp.obj": [
+			"MagicLeapImageTracker.init.gen.cpp.obj",
+			"MagicLeapImageTrackerComponent.gen.cpp.obj",
+			"MagicLeapImageTrackerFunctionLibrary.gen.cpp.obj",
+			"MagicLeapImageTrackerTypes.gen.cpp.obj"
+		]
+	}
+}

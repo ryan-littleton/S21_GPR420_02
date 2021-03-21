@@ -1,0 +1,15 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AndroidPermission.cpp.obj": [
+			"AndroidPermission.cpp.obj",
+			"AndroidPermissionCallbackProxy.cpp.obj",
+			"AndroidPermissionFunctionLibrary.cpp.obj"
+		],
+		"Module.AndroidPermission.gen.cpp.obj": [
+			"AndroidPermission.init.gen.cpp.obj",
+			"AndroidPermissionCallbackProxy.gen.cpp.obj",
+			"AndroidPermissionFunctionLibrary.gen.cpp.obj"
+		]
+	}
+}

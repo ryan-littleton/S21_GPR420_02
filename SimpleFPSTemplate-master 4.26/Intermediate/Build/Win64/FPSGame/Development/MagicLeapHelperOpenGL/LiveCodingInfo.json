@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapHelperOpenGL.cpp.obj": [
+			"ExternalTextureRendererGL.cpp.obj",
+			"MagicLeapHelperOpenGL.cpp.obj"
+		]
+	}
+}

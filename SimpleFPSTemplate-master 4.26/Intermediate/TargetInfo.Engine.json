@@ -1,0 +1,259 @@
+{
+	"Targets": [
+		{
+			"Name": "BenchmarkTool",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\BenchmarkTool\\BenchmarkTool.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "BlankProgram",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\BlankProgram\\BlankProgram.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "BuildPatchTool",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\BuildPatchTool\\BuildPatchTool.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "CrashReportClient",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\CrashReportClient\\CrashReportClient.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "CrashReportClientEditor",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\CrashReportClient\\CrashReportClientEditor.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithCADWorker",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithCADWorker\\DatasmithCADWorker.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithFacadeCSharp",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithFacadeCSharp\\DatasmithFacadeCSharp.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithMax2016",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithMaxExporter\\DatasmithMax2016.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithMax2017",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithMaxExporter\\DatasmithMax2017.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithMax2018",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithMaxExporter\\DatasmithMax2018.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithMax2019",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithMaxExporter\\DatasmithMax2019.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithMax2020",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithMaxExporter\\DatasmithMax2020.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithMax2021",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithMaxExporter\\DatasmithMax2021.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithNavisworks2019",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithNavisworksExporter\\UBTModules\\DatasmithNavisworks2019.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithNavisworks2020",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithNavisworksExporter\\UBTModules\\DatasmithNavisworks2020.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithRevit2018",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithRevitExporter\\DatasmithRevit2018.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithRevit2019",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithRevitExporter\\DatasmithRevit2019.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithRevit2020",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithRevitExporter\\DatasmithRevit2020.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithRevit2021",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithRevitExporter\\DatasmithRevit2021.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithRhino6",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithRhinoExporter\\DatasmithRhino6.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithSDK",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithSDK\\DatasmithSDK.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithSketchUp2017",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithSketchUpExporter\\DatasmithSketchUp2017.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithSketchUp2018",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithSketchUpExporter\\DatasmithSketchUp2018.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithSketchUp2019",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithSketchUpExporter\\DatasmithSketchUp2019.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DatasmithSketchUp2020",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Enterprise\\Datasmith\\DatasmithSketchUpExporter\\DatasmithSketchUp2020.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "HeadlessChaos",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\HeadlessChaos\\HeadlessChaos.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealLaunchDaemon",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\IOS\\UnrealLaunchDaemon\\UnrealLaunchDaemon.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "LiveCodingConsole",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\LiveCodingConsole\\LiveCodingConsole.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "DsymExporter",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Mac\\DsymExporter\\DsymExporter.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UE4EditorServices",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Mac\\UE4EditorServices\\UE4EditorServices.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealAtoS",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Mac\\UnrealAtoS\\UnrealAtoS.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "ShaderCompileWorker",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\ShaderCompileWorker\\ShaderCompileWorker.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "SlateViewer",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\SlateViewer\\SlateViewer.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "SwitchboardListener",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\SwitchboardListener\\SwitchboardListener.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "TestPAL",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\TestPAL\\TestPAL.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "TextureShareSDK",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\TextureShare\\TextureShareSDK\\TextureShareSDK.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealCEFSubProcess",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealCEFSubProcess\\UnrealCEFSubProcess.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealFileServer",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealFileServer\\UnrealFileServer.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealFrontend",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealFrontend\\UnrealFrontend.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealHeaderTool",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealHeaderTool\\UnrealHeaderTool.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealInsights",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealInsights\\UnrealInsights.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealLightmass",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealLightmass\\UnrealLightmass.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealMultiUserServer",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealMultiUserServer\\UnrealMultiUserServer.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealPak",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealPak\\UnrealPak.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealRecoverySvc",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealRecoverySvc\\UnrealRecoverySvc.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UnrealVersionSelector",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\UnrealVersionSelector\\UnrealVersionSelector.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "BootstrapPackagedGame",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\Programs\\Windows\\BootstrapPackagedGame\\BootstrapPackagedGame.Target.cs",
+			"Type": "Program"
+		},
+		{
+			"Name": "UE4Client",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\UE4Client.Target.cs",
+			"Type": "Client"
+		},
+		{
+			"Name": "UE4Editor",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\UE4Editor.Target.cs",
+			"Type": "Editor"
+		},
+		{
+			"Name": "UE4Game",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\UE4Game.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "UE4Server",
+			"Path": "C:\\Users\\Alex\\Desktop\\UnrealEngine\\Engine\\Source\\UE4Server.Target.cs",
+			"Type": "Server"
+		}
+	]
+}

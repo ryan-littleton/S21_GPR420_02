@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\Users\\Alex\\Desktop\\S21_GPR420_02\\SimpleFPSTemplate-master 4.26\\Source\\FPSGame\\FPSGame.Build.cs",
+		"C:\\Users\\Alex\\Desktop\\S21_GPR420_02\\SimpleFPSTemplate-master 4.26\\Source\\FPSGame.Target.cs",
+		"C:\\Users\\Alex\\Desktop\\S21_GPR420_02\\SimpleFPSTemplate-master 4.26\\Source\\FPSGameEditor.Target.cs"
+	],
+	"EngineVersion": "4.26.0"
+}

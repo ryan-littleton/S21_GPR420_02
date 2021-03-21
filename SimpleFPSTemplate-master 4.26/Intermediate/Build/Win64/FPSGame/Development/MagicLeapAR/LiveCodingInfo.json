@@ -1,0 +1,23 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapAR.cpp.obj": [
+			"LuminARFunctionLibrary.cpp.obj",
+			"LuminARImageTracker.cpp.obj",
+			"LuminARLightTracker.cpp.obj",
+			"LuminARModule.cpp.obj",
+			"LuminAROrigin.cpp.obj",
+			"LuminARPlanesTracker.cpp.obj",
+			"LuminARPointsTracker.cpp.obj",
+			"LuminARTrackableResource.cpp.obj",
+			"LuminARTrackingSystem.cpp.obj"
+		],
+		"Module.MagicLeapAR.gen.cpp.obj": [
+			"LuminARFunctionLibrary.gen.cpp.obj",
+			"LuminAROrigin.gen.cpp.obj",
+			"LuminARSessionConfig.gen.cpp.obj",
+			"LuminARTypes.gen.cpp.obj",
+			"MagicLeapAR.init.gen.cpp.obj"
+		]
+	}
+}

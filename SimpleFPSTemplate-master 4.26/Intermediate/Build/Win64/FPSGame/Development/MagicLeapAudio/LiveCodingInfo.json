@@ -1,0 +1,17 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapAudio.cpp.obj": [
+			"AudioMixerPlatformMagicLeap.cpp.obj",
+			"FakeAudioMixerMagicLeap.cpp.obj",
+			"FakeDeviceCallbackRunnable.cpp.obj",
+			"MagicLeapAudioFunctionLibrary.cpp.obj",
+			"MagicLeapAudioModule.cpp.obj"
+		],
+		"Module.MagicLeapAudio.gen.cpp.obj": [
+			"MagicLeapAudio.init.gen.cpp.obj",
+			"MagicLeapAudioFunctionLibrary.gen.cpp.obj",
+			"MagicLeapAudioTypes.gen.cpp.obj"
+		]
+	}
+}

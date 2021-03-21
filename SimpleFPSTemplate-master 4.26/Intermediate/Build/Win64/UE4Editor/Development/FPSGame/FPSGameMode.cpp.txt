@@ -1,0 +1,22 @@
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Development\FPSGame\Definitions.FPSGame.h
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\Public\FPSGameMode.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Inc\FPSGame\FPSGameMode.generated.h
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\Public\FPSHUD.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/HUD.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/HUDHitBox.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/DebugTextInfo.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DebugTextInfo.generated.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\HUD.generated.h
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Inc\FPSGame\FPSHUD.generated.h
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\Public\FPSCharacter.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Inc\FPSGame\FPSCharacter.generated.h

@@ -1,0 +1,14 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MagicLeapEyeTracker.cpp.obj": [
+			"MagicLeapEyeTrackerModule.cpp.obj",
+			"MagicLeapVREyeTracker.cpp.obj"
+		],
+		"Module.MagicLeapEyeTracker.gen.cpp.obj": [
+			"MagicLeapEyeTracker.init.gen.cpp.obj",
+			"MagicLeapEyeTrackerModule.gen.cpp.obj",
+			"MagicLeapEyeTrackerTypes.gen.cpp.obj"
+		]
+	}
+}
