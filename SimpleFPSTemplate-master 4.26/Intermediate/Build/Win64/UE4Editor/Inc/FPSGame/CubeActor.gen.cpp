@@ -18,6 +18,8 @@ void EmptyLinkFunctionForGeneratedCodeCubeActor() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_FPSGame();
 	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	FPSGAME_API UClass* Z_Construct_UClass_AHttpActor_NoRegister();
 // End Cross Module References
 	void ACubeActor::StaticRegisterNativesACubeActor()
 	{
@@ -36,6 +38,14 @@ void EmptyLinkFunctionForGeneratedCodeCubeActor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_CubeMesh_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_CubeMesh;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Universalis_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Universalis;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RetainerName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_RetainerName;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -60,8 +70,24 @@ void EmptyLinkFunctionForGeneratedCodeCubeActor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ACubeActor_Statics::NewProp_CubeMesh = { "CubeMesh", nullptr, (EPropertyFlags)0x00400000000a0009, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACubeActor, CubeMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ACubeActor_Statics::NewProp_CubeMesh_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACubeActor_Statics::NewProp_CubeMesh_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACubeActor_Statics::NewProp_Universalis_MetaData[] = {
+		{ "Category", "HTTP" },
+		{ "ModuleRelativePath", "Public/CubeActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACubeActor_Statics::NewProp_Universalis = { "Universalis", nullptr, (EPropertyFlags)0x0024080000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACubeActor, Universalis), Z_Construct_UClass_AHttpActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ACubeActor_Statics::NewProp_Universalis_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACubeActor_Statics::NewProp_Universalis_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACubeActor_Statics::NewProp_RetainerName_MetaData[] = {
+		{ "Category", "Text" },
+		{ "ModuleRelativePath", "Public/CubeActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_ACubeActor_Statics::NewProp_RetainerName = { "RetainerName", nullptr, (EPropertyFlags)0x0020080000020015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACubeActor, RetainerName), METADATA_PARAMS(Z_Construct_UClass_ACubeActor_Statics::NewProp_RetainerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACubeActor_Statics::NewProp_RetainerName_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACubeActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubeActor_Statics::NewProp_CubeMesh,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubeActor_Statics::NewProp_Universalis,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACubeActor_Statics::NewProp_RetainerName,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACubeActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACubeActor>::IsAbstract,
@@ -90,7 +116,7 @@ void EmptyLinkFunctionForGeneratedCodeCubeActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACubeActor, 936113331);
+	IMPLEMENT_CLASS(ACubeActor, 2616562415);
 	template<> FPSGAME_API UClass* StaticClass<ACubeActor>()
 	{
 		return ACubeActor::StaticClass();

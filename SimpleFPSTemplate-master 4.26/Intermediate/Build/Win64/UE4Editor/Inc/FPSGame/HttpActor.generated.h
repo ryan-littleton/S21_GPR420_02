@@ -16,11 +16,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_HttpActor_h_13_SPARSE_DATA
 #define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_HttpActor_h_13_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execGetRetainerName); \
 	DECLARE_FUNCTION(execMyHttpCall);
 
 
 #define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_HttpActor_h_13_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execGetRetainerName); \
 	DECLARE_FUNCTION(execMyHttpCall);
 
 

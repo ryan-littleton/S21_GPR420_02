@@ -22,14 +22,15 @@ ACubeActor::ACubeActor()
 // Called when the game starts or when spawned
 void ACubeActor::BeginPlay()
 {
+	NewActor = GetWorld()->SpawnActor<AHttpActor>(Universalis, GetActorLocation(), GetActorRotation());
+	RetainerName = NewActor->GetRetainerName();
 	Super::BeginPlay();
-	
 }
 
 // Called every frame
 void ACubeActor::Tick(float DeltaTime)
 {
+	RetainerName = NewActor->GetRetainerName();
 	Super::Tick(DeltaTime);
-
 }
 

@@ -25,6 +25,12 @@ public:
 	UFUNCTION()
 	void MyHttpCall();
 
+	UFUNCTION()
+	FText GetRetainerName();
+
+	UPROPERTY(VisibleAnywhere, Category = "Data")
+	FText RetainerName;
+
 	// Processing get request
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);
 

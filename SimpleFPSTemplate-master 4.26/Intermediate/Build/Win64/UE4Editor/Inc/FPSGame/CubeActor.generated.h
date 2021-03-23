@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define FPSGAME_CubeActor_generated_h
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_SPARSE_DATA
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_RPC_WRAPPERS
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_INCLASS_NO_PURE_DECLS \
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_SPARSE_DATA
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_RPC_WRAPPERS
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACubeActor(); \
 	friend struct Z_Construct_UClass_ACubeActor_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ACubeActor)
 
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_INCLASS \
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_INCLASS \
 private: \
 	static void StaticRegisterNativesACubeActor(); \
 	friend struct Z_Construct_UClass_ACubeActor_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ACubeActor)
 
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_STANDARD_CONSTRUCTORS \
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACubeActor(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACubeActor) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_ENHANCED_CONSTRUCTORS \
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACubeActor(ACubeActor&&); \
@@ -58,31 +58,33 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACubeActor); \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACubeActor)
 
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__CubeMesh() { return STRUCT_OFFSET(ACubeActor, CubeMesh); }
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__CubeMesh() { return STRUCT_OFFSET(ACubeActor, CubeMesh); } \
+	FORCEINLINE static uint32 __PPO__Universalis() { return STRUCT_OFFSET(ACubeActor, Universalis); } \
+	FORCEINLINE static uint32 __PPO__RetainerName() { return STRUCT_OFFSET(ACubeActor, RetainerName); }
 
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_9_PROLOG
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_GENERATED_BODY_LEGACY \
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_PROLOG
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_PRIVATE_PROPERTY_OFFSET \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_SPARSE_DATA \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_RPC_WRAPPERS \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_INCLASS \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_STANDARD_CONSTRUCTORS \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_PRIVATE_PROPERTY_OFFSET \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_SPARSE_DATA \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_RPC_WRAPPERS \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_INCLASS \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_GENERATED_BODY \
+#define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_PRIVATE_PROPERTY_OFFSET \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_SPARSE_DATA \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_INCLASS_NO_PURE_DECLS \
-	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_ENHANCED_CONSTRUCTORS \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_PRIVATE_PROPERTY_OFFSET \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_SPARSE_DATA \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_INCLASS_NO_PURE_DECLS \
+	SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
