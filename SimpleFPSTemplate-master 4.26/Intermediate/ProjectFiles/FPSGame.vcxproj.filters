@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FPSGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{15BF25A9-6CE2-4F23-8996-50C0E9B5FF2A}</UniqueIdentifier>
+      <UniqueIdentifier>{07223F39-81E4-4798-8E20-8FB39CE56D41}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FPSGame.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{B3BC100C-8245-44FA-B99F-0BCE7BCBC5B8}</UniqueIdentifier>
+      <UniqueIdentifier>{35E58B30-4282-4685-882A-FF54A5B358CC}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FPSGame">
-      <UniqueIdentifier>{34414C6B-2CD2-4F46-9327-3EF01D86DF5F}</UniqueIdentifier>
+      <UniqueIdentifier>{72D4A057-EEBC-4E4E-A44C-B1FBEDC5637B}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FPSGame\FPSGame.Build.cs">
       <Filter>Source\FPSGame</Filter>
@@ -39,7 +39,7 @@
       <Filter>Source\FPSGame</Filter>
     </ClInclude>
     <Filter Include="Source\FPSGame\Private">
-      <UniqueIdentifier>{2402AAB8-05FF-4B13-B17B-F2E1F354D04E}</UniqueIdentifier>
+      <UniqueIdentifier>{F214DEE2-4D37-4830-A200-E3B3CEB8C9B4}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FPSGame\Private\CubeActor.cpp">
       <Filter>Source\FPSGame\Private</Filter>
@@ -62,8 +62,11 @@
     <ClCompile Include="..\..\Source\FPSGame\Private\FPSSpecialProjectile.cpp">
       <Filter>Source\FPSGame\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\FPSGame\Private\HttpActor.cpp">
+      <Filter>Source\FPSGame\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\FPSGame\Public">
-      <UniqueIdentifier>{E4470940-53CF-49F9-805E-66F24E4BA993}</UniqueIdentifier>
+      <UniqueIdentifier>{55B9B5B9-654D-43E9-A005-9A4C6CF806C8}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FPSGame\Public\CubeActor.h">
       <Filter>Source\FPSGame\Public</Filter>
@@ -84,6 +87,9 @@
       <Filter>Source\FPSGame\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\FPSGame\Public\FPSSpecialProjectile.h">
+      <Filter>Source\FPSGame\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\FPSGame\Public\HttpActor.h">
       <Filter>Source\FPSGame\Public</Filter>
     </ClInclude>
   </ItemGroup>

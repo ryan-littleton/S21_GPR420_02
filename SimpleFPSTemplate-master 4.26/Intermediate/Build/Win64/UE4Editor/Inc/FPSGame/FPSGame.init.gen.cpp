@@ -25,8 +25,8 @@ void EmptyLinkFunctionForGeneratedCodeFPSGame_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x7CCA4C78,
-				0x46BACCA7,
+				0xE6DFBD9E,
+				0xD28999F2,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);
