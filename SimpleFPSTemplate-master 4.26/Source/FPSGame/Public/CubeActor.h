@@ -32,6 +32,9 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Text")
 		FText RetainerName;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Text")
+		int32 Price;
+
 	AHttpActor* NewActor;
 
 public:	

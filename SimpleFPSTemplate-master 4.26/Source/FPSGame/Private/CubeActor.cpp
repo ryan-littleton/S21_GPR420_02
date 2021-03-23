@@ -31,6 +31,7 @@ void ACubeActor::BeginPlay()
 void ACubeActor::Tick(float DeltaTime)
 {
 	RetainerName = NewActor->GetRetainerName();
+	Price = NewActor->GetPrice();
 	Super::Tick(DeltaTime);
 }
 

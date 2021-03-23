@@ -28,8 +28,14 @@ public:
 	UFUNCTION()
 	FText GetRetainerName();
 
+	UFUNCTION()
+	int32 GetPrice();
+
 	UPROPERTY(VisibleAnywhere, Category = "Data")
 	FText RetainerName;
+
+	UPROPERTY(VisibleAnywhere, Category = "Data")
+	int32 PricePerUnit;
 
 	// Processing get request
 	void OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful);

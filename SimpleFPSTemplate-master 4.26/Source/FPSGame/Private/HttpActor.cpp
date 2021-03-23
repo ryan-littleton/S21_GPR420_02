@@ -33,7 +33,7 @@ void AHttpActor::BeginPlay()
 void AHttpActor::MyHttpCall() {
 	TSharedRef<IHttpRequest, ESPMode::ThreadSafe> Request = Http->CreateRequest(); 
 	Request->OnProcessRequestComplete().BindUObject(this, &AHttpActor::OnResponseReceived);//This is the url on which to process the request
-	Request->SetURL("https://universalis.app/api/74/26465");
+	Request->SetURL("https://universalis.app/api/74/21800");
 	Request->SetVerb("GET");
 	Request->SetHeader(TEXT("User-Agent"), "X-UnrealEngine-Agent");
 	Request->SetHeader("Content-Type", TEXT("application/json"));
@@ -44,6 +44,10 @@ FText AHttpActor::GetRetainerName() {
 	return RetainerName;
 }
 
+int32 AHttpActor::GetPrice() {
+	return PricePerUnit;
+}
+
 void AHttpActor::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Response, bool bWasSuccessful)
 {
 	//Create a pointer to hold the json serialized data
@@ -51,6 +55,8 @@ void AHttpActor::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Re
 
 	//Create a reader pointer to read the json data
 	TSharedRef<TJsonReader<>> Reader = TJsonReaderFactory<>::Create(Response->GetContentAsString());
+	TArray<FString> retainers;
+	TArray<int32> prices;
 
 	//Deserialize the json data given Reader and the actual object to deserialize
 	if (FJsonSerializer::Deserialize(Reader, JsonObject))
@@ -64,11 +70,17 @@ void AHttpActor::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Re
 			for (int32 i = 0; i < objArray.Num(); i++)
 			{
 				FString retainer = objArray[i]->AsObject()->GetStringField(TEXT("retainerName"));
-				RetainerName = FText::FromString(retainer);
-
+				retainers.Add(retainer);
+				int32 price = objArray[i]->AsObject()->GetIntegerField("pricePerUnit");
+				prices.Add(price);
 				GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, retainer);
 			}
 		}
+
+		int32 randomInt = FMath::RandRange(0, retainers.Num() - 1);
+		GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, FString::FromInt(randomInt));
+		RetainerName = FText::FromString(retainers[randomInt]);
+		PricePerUnit = prices[randomInt];
 		//int32 recievedInt = JsonObject->GetIntegerField(objArray[0]->AsString());
 		//Output it to the engine
 		//GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, objArray[0]->AsString());

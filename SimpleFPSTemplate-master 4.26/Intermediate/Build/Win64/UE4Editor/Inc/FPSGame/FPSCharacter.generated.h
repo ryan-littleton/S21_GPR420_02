@@ -26,6 +26,7 @@ static inline void FMultiCast_DelegateWrapper(const FMulticastScriptDelegate& Mu
 	DECLARE_FUNCTION(execSetCooldown); \
 	DECLARE_FUNCTION(execActivateMulticast); \
 	DECLARE_FUNCTION(execBeginMulticast); \
+	DECLARE_FUNCTION(execRunSpecialAttack); \
 	DECLARE_FUNCTION(execSpecialAttack);
 
 
@@ -34,6 +35,7 @@ static inline void FMultiCast_DelegateWrapper(const FMulticastScriptDelegate& Mu
 	DECLARE_FUNCTION(execSetCooldown); \
 	DECLARE_FUNCTION(execActivateMulticast); \
 	DECLARE_FUNCTION(execBeginMulticast); \
+	DECLARE_FUNCTION(execRunSpecialAttack); \
 	DECLARE_FUNCTION(execSpecialAttack);
 
 

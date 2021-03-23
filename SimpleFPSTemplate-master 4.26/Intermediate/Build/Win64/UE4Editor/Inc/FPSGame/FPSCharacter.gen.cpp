@@ -70,6 +70,14 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		P_THIS->BeginMulticast();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(AFPSCharacter::execRunSpecialAttack)
+	{
+		P_GET_PROPERTY(FFloatProperty,Z_Param_AttackScale);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->RunSpecialAttack(Z_Param_AttackScale);
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AFPSCharacter::execSpecialAttack)
 	{
 		P_FINISH;
@@ -83,6 +91,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "ActivateMulticast", &AFPSCharacter::execActivateMulticast },
 			{ "BeginMulticast", &AFPSCharacter::execBeginMulticast },
+			{ "RunSpecialAttack", &AFPSCharacter::execRunSpecialAttack },
 			{ "SetCooldown", &AFPSCharacter::execSetCooldown },
 			{ "SpecialAttack", &AFPSCharacter::execSpecialAttack },
 		};
@@ -131,6 +140,38 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFPSCharacter_BeginMulticast_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics
+	{
+		struct FPSCharacter_eventRunSpecialAttack_Parms
+		{
+			float AttackScale;
+		};
+		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_AttackScale;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::NewProp_AttackScale = { "AttackScale", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(FPSCharacter_eventRunSpecialAttack_Parms, AttackScale), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::NewProp_AttackScale,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/FPSCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AFPSCharacter, nullptr, "RunSpecialAttack", nullptr, nullptr, sizeof(FPSCharacter_eventRunSpecialAttack_Parms), Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -238,6 +279,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_AFPSCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AFPSCharacter_ActivateMulticast, "ActivateMulticast" }, // 1212002401
 		{ &Z_Construct_UFunction_AFPSCharacter_BeginMulticast, "BeginMulticast" }, // 1279207839
+		{ &Z_Construct_UFunction_AFPSCharacter_RunSpecialAttack, "RunSpecialAttack" }, // 645119611
 		{ &Z_Construct_UFunction_AFPSCharacter_SetCooldown, "SetCooldown" }, // 2605892615
 		{ &Z_Construct_UFunction_AFPSCharacter_SpecialAttack, "SpecialAttack" }, // 813060685
 	};
@@ -364,7 +406,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AFPSCharacter, 3064246598);
+	IMPLEMENT_CLASS(AFPSCharacter, 2930086730);
 	template<> FPSGAME_API UClass* StaticClass<AFPSCharacter>()
 	{
 		return AFPSCharacter::StaticClass();

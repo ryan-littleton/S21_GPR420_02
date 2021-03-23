@@ -25,7 +25,7 @@ void EmptyLinkFunctionForGeneratedCodeFPSGame_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x4F9FF076,
+				0x94CE7107,
 				0xCE915CAF,
 				METADATA_PARAMS(nullptr, 0)
 			};

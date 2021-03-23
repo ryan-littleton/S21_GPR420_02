@@ -18,6 +18,13 @@ void EmptyLinkFunctionForGeneratedCodeHttpActor() {}
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_FPSGame();
 // End Cross Module References
+	DEFINE_FUNCTION(AHttpActor::execGetPrice)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		*(int32*)Z_Param__Result=P_THIS->GetPrice();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(AHttpActor::execGetRetainerName)
 	{
 		P_FINISH;
@@ -36,10 +43,43 @@ void EmptyLinkFunctionForGeneratedCodeHttpActor() {}
 	{
 		UClass* Class = AHttpActor::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "GetPrice", &AHttpActor::execGetPrice },
 			{ "GetRetainerName", &AHttpActor::execGetRetainerName },
 			{ "MyHttpCall", &AHttpActor::execMyHttpCall },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_AHttpActor_GetPrice_Statics
+	{
+		struct HttpActor_eventGetPrice_Parms
+		{
+			int32 ReturnValue;
+		};
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UFunction_AHttpActor_GetPrice_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(HttpActor_eventGetPrice_Parms, ReturnValue), METADATA_PARAMS(nullptr, 0) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AHttpActor_GetPrice_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AHttpActor_GetPrice_Statics::NewProp_ReturnValue,
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AHttpActor_GetPrice_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/HttpActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_AHttpActor_GetPrice_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AHttpActor, nullptr, "GetPrice", nullptr, nullptr, sizeof(HttpActor_eventGetPrice_Parms), Z_Construct_UFunction_AHttpActor_GetPrice_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AHttpActor_GetPrice_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_AHttpActor_GetPrice_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_AHttpActor_GetPrice_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_AHttpActor_GetPrice()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_AHttpActor_GetPrice_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_AHttpActor_GetRetainerName_Statics
 	{
@@ -110,6 +150,10 @@ void EmptyLinkFunctionForGeneratedCodeHttpActor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RetainerName_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FTextPropertyParams NewProp_RetainerName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_PricePerUnit_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_PricePerUnit;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -119,6 +163,7 @@ void EmptyLinkFunctionForGeneratedCodeHttpActor() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FPSGame,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_AHttpActor_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_AHttpActor_GetPrice, "GetPrice" }, // 3950696090
 		{ &Z_Construct_UFunction_AHttpActor_GetRetainerName, "GetRetainerName" }, // 3474662830
 		{ &Z_Construct_UFunction_AHttpActor_MyHttpCall, "MyHttpCall" }, // 2528142930
 	};
@@ -135,8 +180,16 @@ void EmptyLinkFunctionForGeneratedCodeHttpActor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_AHttpActor_Statics::NewProp_RetainerName = { "RetainerName", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHttpActor, RetainerName), METADATA_PARAMS(Z_Construct_UClass_AHttpActor_Statics::NewProp_RetainerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHttpActor_Statics::NewProp_RetainerName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AHttpActor_Statics::NewProp_PricePerUnit_MetaData[] = {
+		{ "Category", "Data" },
+		{ "ModuleRelativePath", "Public/HttpActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_AHttpActor_Statics::NewProp_PricePerUnit = { "PricePerUnit", nullptr, (EPropertyFlags)0x0010000000020001, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AHttpActor, PricePerUnit), METADATA_PARAMS(Z_Construct_UClass_AHttpActor_Statics::NewProp_PricePerUnit_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AHttpActor_Statics::NewProp_PricePerUnit_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AHttpActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHttpActor_Statics::NewProp_RetainerName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AHttpActor_Statics::NewProp_PricePerUnit,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AHttpActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AHttpActor>::IsAbstract,
@@ -165,7 +218,7 @@ void EmptyLinkFunctionForGeneratedCodeHttpActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(AHttpActor, 2855176334);
+	IMPLEMENT_CLASS(AHttpActor, 2878295695);
 	template<> FPSGAME_API UClass* StaticClass<AHttpActor>()
 	{
 		return AHttpActor::StaticClass();

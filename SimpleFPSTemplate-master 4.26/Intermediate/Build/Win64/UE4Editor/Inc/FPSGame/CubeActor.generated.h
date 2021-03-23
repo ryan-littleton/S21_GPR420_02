@@ -61,7 +61,8 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ACubeActor); \
 #define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_15_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__CubeMesh() { return STRUCT_OFFSET(ACubeActor, CubeMesh); } \
 	FORCEINLINE static uint32 __PPO__Universalis() { return STRUCT_OFFSET(ACubeActor, Universalis); } \
-	FORCEINLINE static uint32 __PPO__RetainerName() { return STRUCT_OFFSET(ACubeActor, RetainerName); }
+	FORCEINLINE static uint32 __PPO__RetainerName() { return STRUCT_OFFSET(ACubeActor, RetainerName); } \
+	FORCEINLINE static uint32 __PPO__Price() { return STRUCT_OFFSET(ACubeActor, Price); }
 
 
 #define SimpleFPSTemplate_master_4_26_Source_FPSGame_Public_CubeActor_h_12_PROLOG
