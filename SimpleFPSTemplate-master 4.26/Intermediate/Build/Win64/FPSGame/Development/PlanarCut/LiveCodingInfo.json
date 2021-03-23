@@ -1,9 +1,0 @@
-{
-	"RemapUnityFiles": 
-	{
-		"Module.PlanarCut.cpp.obj": [
-			"PlanarCut.cpp.obj",
-			"PlanarCutPlugin.cpp.obj"
-		]
-	}
-}

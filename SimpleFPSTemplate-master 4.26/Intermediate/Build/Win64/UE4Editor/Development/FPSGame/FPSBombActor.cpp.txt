@@ -1,14 +1,14 @@
-C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Development\FPSGame\Definitions.FPSGame.h
-C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\Public\FPSBombActor.h
-C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Inc\FPSGame\FPSBombActor.generated.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
-C:\Users\Alex\Desktop\UnrealEngine\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+C:\Git Repos\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Development\FPSGame\Definitions.FPSGame.h
+C:\Git Repos\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\Public\FPSBombActor.h
+C:\Git Repos\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Inc\FPSGame\FPSBombActor.generated.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Engine/CollisionProfile.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CollisionProfile.generated.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h

@@ -1,2 +1,2 @@
-C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Development\FPSGame\Definitions.FPSGame.h
-C:\Users\Alex\Desktop\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\FPSGame.h
+C:\Git Repos\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Intermediate\Build\Win64\UE4Editor\Development\FPSGame\Definitions.FPSGame.h
+C:\Git Repos\S21_GPR420_02\SimpleFPSTemplate-master 4.26\Source\FPSGame\FPSGame.h
