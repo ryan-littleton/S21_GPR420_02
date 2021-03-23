@@ -70,8 +70,9 @@ protected:
 	//fires special attack
 	UFUNCTION()
 	void SpecialAttack();
-	//UFUNCTION()
-	//void RunSpecialAttack(float _Scale);
+	UFUNCTION()
+	void RunSpecialAttack(float AttackScale);
+	float TempAttackScale;
 
 	//used for the multicast delegate function, currently changes to a random color
 	UFUNCTION()
