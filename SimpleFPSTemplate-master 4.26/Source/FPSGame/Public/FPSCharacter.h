@@ -73,6 +73,7 @@ protected:
 	UFUNCTION()
 	void RunSpecialAttack(float AttackScale);
 	float TempAttackScale;
+	//bool MustFire = false;
 
 	//used for the multicast delegate function, currently changes to a random color
 	UFUNCTION()

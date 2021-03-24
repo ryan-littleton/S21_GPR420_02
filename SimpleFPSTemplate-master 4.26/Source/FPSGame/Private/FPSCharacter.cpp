@@ -95,17 +95,27 @@ void AFPSCharacter::Fire()
 
 void AFPSCharacter::SpecialAttack()
 {
+	TempAttackScale = 0.0f;
 	FTimerHandle Timer;
+	FTimerHandle Timer2;
+	FTimerHandle Timer3;
+	FTimerHandle Timer4;
 	FTimerDelegate TimerDel;
 	TimerDel.BindUFunction(this, FName("RunSpecialAttack"), 0.5f);
 	UWorld* const World = GetWorld();
 	if(World != nullptr)
 	{
 		World->GetTimerManager().SetTimer(Timer, TimerDel, 0.25f, false); //scale 1/2
+		World->GetTimerManager().SetTimer(Timer2, TimerDel, 1.0f, false); //scale 1/2
+		World->GetTimerManager().SetTimer(Timer3, TimerDel, 2.0f, false); //scale 1/2
+		World->GetTimerManager().SetTimer(Timer4, TimerDel, 3.0f, false); //scale 1/2
+		
+		/*
 		for (int i = 0; i <= 3; i++)
 		{
-			World->GetTimerManager().SetTimer(Timer, TimerDel, static_cast<float>(i), false);
+			World->GetTimerManager().SetTimer(Timer2, TimerDel, static_cast<float>(i), false);
 		}
+		*/
 	}
 }
 

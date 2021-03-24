@@ -10,6 +10,7 @@ AHttpActor::AHttpActor()
 	PrimaryActorTick.bCanEverTick = true;
 	Http = &FHttpModule::Get();
 	RetainerName = FText::FromString("Jaundice");
+	PricePerUnit = 0;
 }
 
 // Called when the game starts or when spawned

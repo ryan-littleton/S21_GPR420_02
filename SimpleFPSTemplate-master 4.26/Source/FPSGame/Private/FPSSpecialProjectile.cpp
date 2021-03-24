@@ -13,7 +13,7 @@ AFPSSpecialProjectile::AFPSSpecialProjectile()
 {
     //create a projectile similar to regular attack
 	CollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComp"));
-	CollisionComp->InitSphereRadius(100.0f);
+	CollisionComp->InitSphereRadius(100.0f * AttackScale);
 	CollisionComp->SetCollisionProfileName("Projectile");
 	CollisionComp->OnComponentHit.AddDynamic(this, &AFPSSpecialProjectile::OnHit);	// set up a notification for when this component hits something blocking
 
