@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FPSGame.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{07223F39-81E4-4798-8E20-8FB39CE56D41}</UniqueIdentifier>
+      <UniqueIdentifier>{2B8E395A-126B-4B37-B74C-81A9AE9BAD25}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FPSGame.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{35E58B30-4282-4685-882A-FF54A5B358CC}</UniqueIdentifier>
+      <UniqueIdentifier>{141A0DD9-CA33-4A29-895C-EDAD2B572DD1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\FPSGame">
-      <UniqueIdentifier>{72D4A057-EEBC-4E4E-A44C-B1FBEDC5637B}</UniqueIdentifier>
+      <UniqueIdentifier>{9C48E76A-7CE1-4093-A980-59842C86DF96}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FPSGame\FPSGame.Build.cs">
       <Filter>Source\FPSGame</Filter>
@@ -39,7 +39,7 @@
       <Filter>Source\FPSGame</Filter>
     </ClInclude>
     <Filter Include="Source\FPSGame\Private">
-      <UniqueIdentifier>{F214DEE2-4D37-4830-A200-E3B3CEB8C9B4}</UniqueIdentifier>
+      <UniqueIdentifier>{3902F8F8-C815-42CD-8179-594266D26A93}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\FPSGame\Private\CubeActor.cpp">
       <Filter>Source\FPSGame\Private</Filter>
@@ -66,7 +66,7 @@
       <Filter>Source\FPSGame\Private</Filter>
     </ClCompile>
     <Filter Include="Source\FPSGame\Public">
-      <UniqueIdentifier>{55B9B5B9-654D-43E9-A005-9A4C6CF806C8}</UniqueIdentifier>
+      <UniqueIdentifier>{0DFDEB5F-43C3-48A6-919F-534A2A8A4AEF}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\FPSGame\Public\CubeActor.h">
       <Filter>Source\FPSGame\Public</Filter>
