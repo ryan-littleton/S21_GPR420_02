@@ -1147,3 +1147,22 @@ LogConfig: Setting CVar [[r.setres:1280x720]]
 [2021.04.20-21.06.01:648][988]AssetCheck: New page: Asset Save: multiple assets
 [2021.04.20-21.06.01:648][988]LogContentValidation: Display: Validating World /Game/Levels/Level_0.Level_0
 [2021.04.20-21.06.01:648][988]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Level_0_BuiltData.Level_0_BuiltData
+[2021.04.20-21.07.47:188][206]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2021.04.20-21.07.47:227][206]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/TestTarget" FILE="C:/Git Repos/S21_GPR420_02/Project3/Content/Blueprint/TestTarget.uasset" SILENT=true
+[2021.04.20-21.07.47:235][206]LogSavePackage: Moving 'C:/Git Repos/S21_GPR420_02/Project3/Saved/TestTargetA7196D564F8EF43B945275A3507EFCB8.tmp' to 'C:/Git Repos/S21_GPR420_02/Project3/Content/Blueprint/TestTarget.uasset'
+[2021.04.20-21.07.47:235][206]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Blueprint/DamageHandler" FILE="C:/Git Repos/S21_GPR420_02/Project3/Content/Blueprint/DamageHandler.uasset" SILENT=true
+[2021.04.20-21.07.47:243][206]LogSavePackage: Moving 'C:/Git Repos/S21_GPR420_02/Project3/Saved/DamageHandler7A14347949DC7F0465EB4487DBD1349C.tmp' to 'C:/Git Repos/S21_GPR420_02/Project3/Content/Blueprint/DamageHandler.uasset'
+[2021.04.20-21.07.47:257][206]AssetCheck: New page: Asset Save: multiple assets
+[2021.04.20-21.07.47:257][206]LogContentValidation: Display: Validating Blueprint /Game/Blueprint/TestTarget.TestTarget
+[2021.04.20-21.07.47:257][206]LogContentValidation: Display: Validating Blueprint /Game/Blueprint/DamageHandler.DamageHandler
+[2021.04.20-21.08.07:570][390]LogSlate: Only BGRA pngs, bmps or icos are supported in by External Image Picker
+[2021.04.20-21.08.27:939][578]LogSlate: Window 'Project Settings' being destroyed
+[2021.04.20-21.08.27:944][578]LogSlate: Window 'Project Settings' being destroyed
+[2021.04.20-21.08.32:740][862]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Level_0" FILE="C:/Git Repos/S21_GPR420_02/Project3/Content/Levels/Level_0.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2021.04.20-21.08.32:813][862]LogUObjectHash: Compacting FUObjectHashTables data took   4.41ms
+[2021.04.20-21.08.32:828][862]LogSavePackage: Moving 'C:/Git Repos/S21_GPR420_02/Project3/Saved/Level_0C164C375448FA4CA77849A90C6172429.tmp' to 'C:/Git Repos/S21_GPR420_02/Project3/Content/Levels/Level_0.umap'
+[2021.04.20-21.08.32:843][862]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Levels/Level_0_BuiltData" FILE="C:/Git Repos/S21_GPR420_02/Project3/Content/Levels/Level_0_BuiltData.uasset" SILENT=true
+[2021.04.20-21.08.32:866][862]LogSavePackage: Moving 'C:/Git Repos/S21_GPR420_02/Project3/Saved/Level_0_BuiltDataDB54120041A7DF17E7A2FC969CAC4710.tmp' to 'C:/Git Repos/S21_GPR420_02/Project3/Content/Levels/Level_0_BuiltData.uasset'
+[2021.04.20-21.08.32:960][862]AssetCheck: New page: Asset Save: multiple assets
+[2021.04.20-21.08.32:960][862]LogContentValidation: Display: Validating World /Game/Levels/Level_0.Level_0
+[2021.04.20-21.08.32:960][862]LogContentValidation: Display: Validating MapBuildDataRegistry /Game/Levels/Level_0_BuiltData.Level_0_BuiltData
