@@ -84,7 +84,7 @@ void AHttpActor::OnResponseReceived(FHttpRequestPtr Request, FHttpResponsePtr Re
 		PricePerUnit = prices[randomInt];
 		//int32 recievedInt = JsonObject->GetIntegerField(objArray[0]->AsString());
 		//Output it to the engine
-		//GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, objArray[0]->AsString());
+		GEngine->AddOnScreenDebugMessage(1, 2.0f, FColor::Green, objArray[0]->AsString());
 	}
 }
 
