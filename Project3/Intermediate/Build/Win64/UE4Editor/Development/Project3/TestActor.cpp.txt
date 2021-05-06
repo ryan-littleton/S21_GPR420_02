@@ -1,0 +1,3 @@
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public\TestActor.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\TestActor.generated.h

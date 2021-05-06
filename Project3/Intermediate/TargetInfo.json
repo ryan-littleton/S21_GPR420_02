@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Project3",
+			"Path": "C:\\Git Repos\\S21_GPR420_02\\Project3\\Source\\Project3.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Project3Editor",
+			"Path": "C:\\Git Repos\\S21_GPR420_02\\Project3\\Source\\Project3Editor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

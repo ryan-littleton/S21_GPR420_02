@@ -1,0 +1,16 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-Project3-0942.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\Project3Editor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\TestActor.cpp.obj"
+"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Project3.cpp.obj"
+"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Project3.init.gen.cpp.obj"
+"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\TestActor.gen.cpp.obj"
+"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Default.rc2.res"
+/OUT:"C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\UE4Editor-Project3-0942.lib"
+/INCLUDE:IMPLEMENT_MODULE_Project3
