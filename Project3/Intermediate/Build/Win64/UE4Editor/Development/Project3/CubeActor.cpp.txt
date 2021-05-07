@@ -1,13 +1,13 @@
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Source\Project3\Public\CubeActor.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Source\Project3\Public\HttpActor.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime/Online/HTTP/Public/Http.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\HttpModule.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpRequest.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpBase.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpResponse.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\PlatformHttp.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Windows/WindowsPlatformHttp.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\GenericPlatform/GenericPlatformHttp.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\HttpActor.generated.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CubeActor.generated.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public\CubeActor.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public\HttpActor.h
+G:\Dev\UE_4.26\Engine\Source\Runtime/Online/HTTP/Public/Http.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\HttpModule.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpRequest.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpBase.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpResponse.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\PlatformHttp.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Windows/WindowsPlatformHttp.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\GenericPlatform/GenericPlatformHttp.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\HttpActor.generated.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CubeActor.generated.h

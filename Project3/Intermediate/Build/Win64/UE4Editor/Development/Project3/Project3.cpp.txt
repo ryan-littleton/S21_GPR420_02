@@ -1,2 +1,2 @@
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Source\Project3\Project3.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Project3.h

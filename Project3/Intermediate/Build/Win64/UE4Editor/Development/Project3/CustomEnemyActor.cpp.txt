@@ -1,13 +1,13 @@
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Source\Project3\Public\CustomEnemyActor.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CustomEnemyActor.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public\CustomEnemyActor.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CustomEnemyActor.generated.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/Character.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/CharacterMovementReplication.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\CharacterMovementReplication.generated.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
+G:\Dev\UE_4.26\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h

@@ -1,5 +1,5 @@
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
-C:\Program Files\Epic Games\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Source\Project3/Public/CustomEnemyActor.h
-C:\Users\Alex\Desktop\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CustomEnemyActor.generated.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3/Public/CustomEnemyActor.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CustomEnemyActor.generated.h
