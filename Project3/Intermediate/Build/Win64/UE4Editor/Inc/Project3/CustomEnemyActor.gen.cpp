@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeCustomEnemyActor() {}
 	PROJECT3_API UClass* Z_Construct_UClass_ACustomEnemyActor();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
 	UPackage* Z_Construct_UPackage__Script_Project3();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	PROJECT3_API UClass* Z_Construct_UClass_AHttpActor_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ACustomEnemyActor::execFindOverlaps)
 	{
@@ -74,6 +76,18 @@ void EmptyLinkFunctionForGeneratedCodeCustomEnemyActor() {}
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_InterpSpeed_MetaData[];
 #endif
 		static const UE4CodeGen_Private::FFloatPropertyParams NewProp_InterpSpeed;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Universalis_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Universalis;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_RetainerName_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FTextPropertyParams NewProp_RetainerName;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Price_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FIntPropertyParams NewProp_Price;
 		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
@@ -105,9 +119,33 @@ void EmptyLinkFunctionForGeneratedCodeCustomEnemyActor() {}
 	};
 #endif
 	const UE4CodeGen_Private::FFloatPropertyParams Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_InterpSpeed = { "InterpSpeed", nullptr, (EPropertyFlags)0x0010000000020005, UE4CodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACustomEnemyActor, InterpSpeed), METADATA_PARAMS(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_InterpSpeed_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_InterpSpeed_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Universalis_MetaData[] = {
+		{ "Category", "HTTP" },
+		{ "ModuleRelativePath", "Public/CustomEnemyActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Universalis = { "Universalis", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACustomEnemyActor, Universalis), Z_Construct_UClass_AHttpActor_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Universalis_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Universalis_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_RetainerName_MetaData[] = {
+		{ "Category", "Text" },
+		{ "ModuleRelativePath", "Public/CustomEnemyActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FTextPropertyParams Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_RetainerName = { "RetainerName", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACustomEnemyActor, RetainerName), METADATA_PARAMS(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_RetainerName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_RetainerName_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Price_MetaData[] = {
+		{ "Category", "Text" },
+		{ "ModuleRelativePath", "Public/CustomEnemyActor.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FIntPropertyParams Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Price = { "Price", nullptr, (EPropertyFlags)0x0010000000020015, UE4CodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACustomEnemyActor, Price), METADATA_PARAMS(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Price_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Price_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACustomEnemyActor_Statics::PropPointers[] = {
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_DetectionRange,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_InterpSpeed,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Universalis,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_RetainerName,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACustomEnemyActor_Statics::NewProp_Price,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACustomEnemyActor_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACustomEnemyActor>::IsAbstract,
@@ -136,7 +174,7 @@ void EmptyLinkFunctionForGeneratedCodeCustomEnemyActor() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACustomEnemyActor, 3158106764);
+	IMPLEMENT_CLASS(ACustomEnemyActor, 1116291841);
 	template<> PROJECT3_API UClass* StaticClass<ACustomEnemyActor>()
 	{
 		return ACustomEnemyActor::StaticClass();

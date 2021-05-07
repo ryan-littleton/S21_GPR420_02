@@ -1,5 +1,15 @@
 C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Development\Project3\Definitions.Project3.h
 C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public\CustomEnemyActor.h
+C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public\HttpActor.h
+G:\Dev\UE_4.26\Engine\Source\Runtime/Online/HTTP/Public/Http.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\HttpModule.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpRequest.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpBase.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Interfaces/IHttpResponse.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\PlatformHttp.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\Windows/WindowsPlatformHttp.h
+G:\Dev\UE_4.26\Engine\Source\Runtime\Online\HTTP\Public\GenericPlatform/GenericPlatformHttp.h
+C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\HttpActor.generated.h
 C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3\CustomEnemyActor.generated.h
 G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
 G:\Dev\UE_4.26\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h

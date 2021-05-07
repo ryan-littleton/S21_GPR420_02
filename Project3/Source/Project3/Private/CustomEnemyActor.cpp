@@ -2,8 +2,6 @@
 
 
 #include "CustomEnemyActor.h"
-#include "Components/SphereComponent.h"
-#include "GameFramework/Character.h"
 
 // Sets default values
 ACustomEnemyActor::ACustomEnemyActor()
@@ -16,16 +14,19 @@ ACustomEnemyActor::ACustomEnemyActor()
 // Called when the game starts or when spawned
 void ACustomEnemyActor::BeginPlay()
 {
+	NewActor = GetWorld()->SpawnActor<AHttpActor>(Universalis, GetActorLocation(), GetActorRotation());
+	RetainerName = NewActor->GetRetainerName();
 	Super::BeginPlay();
-
 }
 
 // Called every frame
 void ACustomEnemyActor::Tick(float DeltaTime)
 {
-	Super::Tick(DeltaTime);
-
 	FindOverlaps();
+
+	RetainerName = NewActor->GetRetainerName();
+	Price = NewActor->GetPrice();
+	Super::Tick(DeltaTime);
 }
 
 void ACustomEnemyActor::FindOverlaps()
@@ -44,8 +45,6 @@ void ACustomEnemyActor::FindOverlaps()
 		AActor* Overlap = Result.GetActor();
 		if (Overlap && Overlap->GetName().Equals("Character_Main_2"))
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 15.0f, FColor::Yellow, TEXT("Player is in range!"));
-
 			//move enemy towards player
 			FVector playerLocation = GetWorld()->GetFirstPlayerController()->GetPawn()->GetActorLocation();
 			FVector currentLocation = this->GetActorLocation();
