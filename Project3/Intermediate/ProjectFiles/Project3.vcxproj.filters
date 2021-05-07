@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Project3.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{60817E15-05B2-4D06-83DD-A78E1D5735EC}</UniqueIdentifier>
+      <UniqueIdentifier>{2F62BCFA-3985-454D-9345-DEE97A0114A0}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Project3.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{06426A84-385E-49CA-AE56-2DBA7045D654}</UniqueIdentifier>
+      <UniqueIdentifier>{377CC4B0-7059-4AC4-93F5-7E78A0CB9AB6}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -27,7 +27,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\Project3">
-      <UniqueIdentifier>{478B92D8-930F-4D20-BAAD-61ECFC8A5F92}</UniqueIdentifier>
+      <UniqueIdentifier>{EB8CE81B-DB55-4D0E-8B37-A134D7BB0959}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Project3\Project3.Build.cs">
       <Filter>Source\Project3</Filter>
@@ -39,9 +39,12 @@
       <Filter>Source\Project3</Filter>
     </ClInclude>
     <Filter Include="Source\Project3\Private">
-      <UniqueIdentifier>{57C17FE7-235C-4C95-BB3A-B20F5ED3EB5A}</UniqueIdentifier>
+      <UniqueIdentifier>{7936C283-3A13-4790-905F-EA6275D644B3}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\Project3\Private\CubeActor.cpp">
+      <Filter>Source\Project3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project3\Private\CustomEnemyActor.cpp">
       <Filter>Source\Project3\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\Project3\Private\HttpActor.cpp">
@@ -51,9 +54,12 @@
       <Filter>Source\Project3\Private</Filter>
     </ClCompile>
     <Filter Include="Source\Project3\Public">
-      <UniqueIdentifier>{7337122F-8949-4EF2-887C-5F673FE1A964}</UniqueIdentifier>
+      <UniqueIdentifier>{7E1FDC02-0313-48C2-A2F7-96AB233782ED}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\Project3\Public\CubeActor.h">
+      <Filter>Source\Project3\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project3\Public\CustomEnemyActor.h">
       <Filter>Source\Project3\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\Project3\Public\HttpActor.h">

@@ -234,6 +234,8 @@
 /I "C:\Git Repos\S21_GPR420_02\Project3\Intermediate\Build\Win64\UE4Editor\Inc\Project3"
 /I "C:\Git Repos\S21_GPR420_02\Project3\Source"
 /I "C:\Git Repos\S21_GPR420_02\Project3\Source\Project3\Public"
+/I ..\Intermediate\Build\Win64\UE4Editor\Inc\JsonUtilities
+/I Runtime\JsonUtilities\Public
 /I ThirdParty\PhysX3\PxShared\include
 /I ThirdParty\PhysX3\PxShared\include\cudamanager
 /I ThirdParty\PhysX3\PxShared\include\filebuf
