@@ -8,9 +8,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-class UPrimitiveComponent;
-class AActor;
-struct FHitResult;
 #ifdef PROJECT3_CustomEnemyActor_generated_h
 #error "CustomEnemyActor.generated.h already included, missing '#pragma once' in CustomEnemyActor.h"
 #endif
@@ -19,14 +16,12 @@ struct FHitResult;
 #define Project3_Source_Project3_Public_CustomEnemyActor_h_14_SPARSE_DATA
 #define Project3_Source_Project3_Public_CustomEnemyActor_h_14_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execFindOverlaps); \
-	DECLARE_FUNCTION(execOnOverlapBegin);
+	DECLARE_FUNCTION(execFindOverlaps);
 
 
 #define Project3_Source_Project3_Public_CustomEnemyActor_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execFindOverlaps); \
-	DECLARE_FUNCTION(execOnOverlapBegin);
+	DECLARE_FUNCTION(execFindOverlaps);
 
 
 #define Project3_Source_Project3_Public_CustomEnemyActor_h_14_INCLASS_NO_PURE_DECLS \
