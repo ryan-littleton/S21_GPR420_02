@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\Project3.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{2F62BCFA-3985-454D-9345-DEE97A0114A0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Project3.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\Project3Editor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{377CC4B0-7059-4AC4-93F5-7E78A0CB9AB6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\Project3">
+      <UniqueIdentifier>{EB8CE81B-DB55-4D0E-8B37-A134D7BB0959}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\Project3\Project3.Build.cs">
+      <Filter>Source\Project3</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\Project3\Project3.cpp">
+      <Filter>Source\Project3</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\Project3\Project3.h">
+      <Filter>Source\Project3</Filter>
+    </ClInclude>
+    <Filter Include="Source\Project3\Private">
+      <UniqueIdentifier>{7936C283-3A13-4790-905F-EA6275D644B3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\Project3\Private\CubeActor.cpp">
+      <Filter>Source\Project3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project3\Private\CustomEnemyActor.cpp">
+      <Filter>Source\Project3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project3\Private\HttpActor.cpp">
+      <Filter>Source\Project3\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Project3\Private\TestActor.cpp">
+      <Filter>Source\Project3\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\Project3\Public">
+      <UniqueIdentifier>{7E1FDC02-0313-48C2-A2F7-96AB233782ED}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\Project3\Public\CubeActor.h">
+      <Filter>Source\Project3\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project3\Public\CustomEnemyActor.h">
+      <Filter>Source\Project3\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project3\Public\HttpActor.h">
+      <Filter>Source\Project3\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Project3\Public\TestActor.h">
+      <Filter>Source\Project3\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
